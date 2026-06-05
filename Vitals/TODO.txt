@@ -1,0 +1,5 @@
+Heartbeat is either accurate or +/- 5 give or take.
+
+So have to find optimal way to get heartbeat... fast.
+
+Find a way to integrate CSI and RSSI to find out heartbeat of each human presence... at least rough estimate!

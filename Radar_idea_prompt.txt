@@ -1,0 +1,15 @@
+hey I need your help in building ESP 32 based Wi-Fi system which basically acts as a radar so now I have four ESP 32 and the approach I want to take is first we connect because my laptop has 3 USB ports I connect three ESP 32 to my laptop just for power not for any serial communication and there will be for total the fourth one will be on the other side of the room and I will spread out the ones near my laptop so its forms almost like a triangle or like a diamond shape including the fourth one now what I want to do is have all of them all four of them try out different fermentation and combinations by communicating with each other and measuring the signal strength so see therefore calibrate for 30 seconds by trying out different communication Permutations and combinations.
+
+And then by checking which pairs signal strength dropped or varied significantly over a few times, but really fast... we can determine where a human is.
+
+So here every node is a beacon and reciever both, just the timings vary. But everything happens really really fast. And we store a few recordings with timestamps in the ram before then sending everything to the laptop collectively to process and estimate human presence and position accurately.
+
+And on the screen we need a basic gui, perhaps we can do that using really simple node server and javascript, which will show all nodes 1,2,3,4 as a undirected graph or grid, and their relative positions will be fixed in calibration stage where the edge length will be equal to avg signal strength during calibration. And then when I walk in I should be displayed as a colored dot moving or standing between these nodes on the graph.
+
+So give code for both, and I'm allowing you to use serial in from node 1 to get the collective data because otherwise we'll have to connect my laptop as well to esp network and that would be pain in the ass. So on com3 the serial will give all data to our node server which will then plot the data accordingly.
+
+Give code and tell what commands to run and how to create folder.
+
+But first, start with only ino, as it sometimes gets errors.
+
+And even before that, give me just code for node 1 and node 2... where I'll put node 2 on power adapter on other end of room and they will calibrate and node 1 from com3 will print in serial monitor the signal strength after calibrating
